@@ -30,9 +30,9 @@ const Hero: React.FC = () => {
       <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 max-w-7xl xl:max-w-7xl 2xl:max-w-8xl mx-auto px-4 sm:px-6 lg:px-12 xl:px-16 2xl:px-20 py-12 sm:py-16 lg:py-20 xl:py-24 2xl:py-28 text-center">
         {/* Main headline */}
-        <div className="mb-8">
+        <div className="mb-12 lg:mb-16">
           <div className="flex items-center justify-center mb-4">
             <Sparkles className="w-8 h-8 text-cyan-400 mr-3 animate-pulse" />
             <span className="text-cyan-400 font-semibold tracking-wider uppercase text-sm">
@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
         </div>
 
         {/* AI Search Interface */}
-        <div className="max-w-2xl mx-auto mb-12">
+        <div className="max-w-2xl mx-auto mb-16 lg:mb-20">
           <div className="bg-gray-800/40 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-8 shadow-2xl shadow-cyan-500/10">
             <div className="relative">
               <input
@@ -110,7 +110,7 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Feature highlights */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-16 lg:mb-20">
           {[
             { title: '3D Virtual Tours', desc: 'Explore properties in immersive 3D', color: 'from-cyan-500 to-blue-500' },
             { title: 'AR Property View', desc: 'See homes through your phone camera', color: 'from-green-500 to-cyan-500' },
@@ -118,7 +118,7 @@ const Hero: React.FC = () => {
           ].map((feature, index) => (
             <div
               key={index}
-              className="bg-gray-800/30 backdrop-blur-md border border-gray-600/30 rounded-xl p-6 hover:border-cyan-400/50 transition-all duration-300 group"
+              className="bg-gray-800/30 backdrop-blur-md border border-gray-600/30 rounded-xl p-8 lg:p-10 hover:border-cyan-400/50 transition-all duration-300 group"
             >
               <div className={`w-12 h-12 bg-gradient-to-r ${feature.color} rounded-lg mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                 <Sparkles className="w-6 h-6 text-white" />
@@ -130,10 +130,12 @@ const Hero: React.FC = () => {
         </div>
 
         {/* CTA */}
-        <button className="group bg-gradient-to-r from-cyan-500 to-purple-500 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:shadow-2xl hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105">
+        <div className="pt-8 lg:pt-12">
+          <button className="group bg-gradient-to-r from-cyan-500 to-purple-500 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:shadow-2xl hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105">
           Start Your AI Journey
           <ArrowRight className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
         </button>
+        </div>
       </div>
     </div>
   );

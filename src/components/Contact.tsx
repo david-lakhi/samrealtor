@@ -28,14 +28,14 @@ const Contact: React.FC = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      content: '+91 98765 43210',
+      content: '+91 88470 24002',
       subContent: 'Mon-Sat, 9 AM - 8 PM',
       color: 'text-green-400'
     },
     {
       icon: Mail,
       title: 'Email Us',
-      content: 'sam@samrealtor.com',
+      content: 'sam.realtorz@gmail.com',
       subContent: 'Quick response guaranteed',
       color: 'text-cyan-400'
     },
@@ -140,7 +140,7 @@ const Contact: React.FC = () => {
                   onChange={handleInputChange}
                   required
                   className="w-full bg-gray-900/50 border border-gray-600/50 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all duration-300"
-                  placeholder="+91 98765 43210"
+                  placeholder="+91 88470 24002"
                 />
               </div>
               
@@ -278,7 +278,7 @@ const Contact: React.FC = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300 flex items-center justify-center space-x-2">
             <Phone className="w-5 h-5" />
-            <span>Call Now: +91 98765 43210</span>
+            <span>Call Now: +91 88470 24002</span>
           </button>
           <button className="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300 flex items-center justify-center space-x-2">
             <MessageCircle className="w-5 h-5" />
