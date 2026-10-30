@@ -14,7 +14,8 @@ import { PropertyDetailsPage } from './components/PropertyDetails';
 function App() {
   const [activeSection, setActiveSection] = useState('home');
 
-  if (window.location.hostname.startsWith('admin.')) return <AdminProperties />;
+  const isAdminRoute = /^\/admin(?:\/|$)/.test(window.location.pathname);
+  if (isAdminRoute || window.location.hostname.startsWith('admin.')) return <AdminProperties />;
   const propertyMatch = window.location.pathname.match(/^\/property\/([^/]+)\/?$/);
   if (propertyMatch) return <PropertyDetailsPage propertyId={decodeURIComponent(propertyMatch[1])} />;
 
