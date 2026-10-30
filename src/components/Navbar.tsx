@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Home, Search, Globe, MessageCircle, TrendingUp, User, Star, Phone } from 'lucide-react';
+import { Menu, X, Home, Search, MessageCircle, TrendingUp, User, Star, Phone } from 'lucide-react';
 
 interface NavbarProps {
   activeSection: string;
@@ -21,7 +21,6 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, setActiveSection }) => {
   const navItems = [
     { id: 'home', label: 'Home', icon: Home },
     { id: 'smart-finder', label: 'Smart Finder', icon: Search },
-    { id: 'explore', label: '3D Explore', icon: Globe },
     { id: 'concierge', label: 'AI Concierge', icon: MessageCircle },
     { id: 'investment', label: 'Investment', icon: TrendingUp },
     { id: 'about', label: 'About', icon: User },
@@ -51,12 +50,9 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, setActiveSection }) => {
             <div className="w-10 h-10 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg flex items-center justify-center">
               <Home className="w-6 h-6 text-white" />
             </div>
-            <div>
-              <h1 className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-                Sam Realtor
-              </h1>
-              <p className="text-xs text-gray-400">AI-Powered Homes</p>
-            </div>
+            <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+              Sam Realtor
+            </span>
           </div>
 
           {/* Desktop Navigation */}

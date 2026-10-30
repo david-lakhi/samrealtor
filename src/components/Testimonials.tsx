@@ -180,7 +180,7 @@ const Testimonials: React.FC = () => {
 
       {/* Additional Testimonials Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {testimonials.slice(0, 3).map((testimonial, index) => (
+        {testimonials.slice(0, 3).map((testimonial) => (
           <div
             key={testimonial.id}
             className="bg-gray-800/40 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6 hover:border-cyan-400/50 transition-all duration-300"

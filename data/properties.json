@@ -1,0 +1,67 @@
+[
+  {
+    "id": "8976e6c6-3be6-47db-a4b8-4cf4fb14d7a3",
+    "title": "3Bhk Flat",
+    "location": "Mohali",
+    "city": "Chandigarh",
+    "propertyType": "Apartment",
+    "price": 22219633,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "parking": 1,
+    "area": "9900",
+    "images": [
+      "/uploads/09c7b6a7-1f4f-43d2-a6cf-64d33254d273.webp",
+      "/uploads/baaa1510-641e-485d-811c-8faf42357978.webp",
+      "/uploads/d1bd7c34-4e37-4b4f-8fc0-50884332f676.png",
+      "/uploads/c010c4bb-8725-4da0-9109-512b98ca30d0.png",
+      "/uploads/8b73815c-3839-43af-8eec-626c11902f14.png",
+      "/uploads/2a2310d4-155b-4760-af87-6775383f596c.png",
+      "/uploads/fcc3d61a-d164-4c73-ab03-9738b30a44fa.png"
+    ],
+    "videos": [
+      "/uploads/c202f231-f75d-4025-8536-2ad27a6eb581.mp4"
+    ],
+    "description": "",
+    "features": [],
+    "createdAt": "2026-10-29T02:38:23.664Z",
+    "image": "/uploads/09c7b6a7-1f4f-43d2-a6cf-64d33254d273.webp",
+    "video": "/uploads/c202f231-f75d-4025-8536-2ad27a6eb581.mp4"
+  },
+  {
+    "id": "2833e016-0f24-4a68-a03e-a616db421186",
+    "title": "Farm House",
+    "location": "Raipur Rani",
+    "city": "Panchkula",
+    "propertyType": "Independent house",
+    "price": 25000000,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "parking": 1,
+    "area": "9900",
+    "image": "",
+    "description": "",
+    "features": [
+      "Farm House with extra  land to use for farming as well as making garden"
+    ],
+    "createdAt": "2026-10-29T02:27:48.631Z"
+  },
+  {
+    "id": "cfbf4dbe-68c1-40a4-a5e5-f8869353cf76",
+    "title": "2BHK Near Airport Rd",
+    "location": "Zirakpur",
+    "city": "Zirakpur",
+    "propertyType": "Apartment",
+    "price": 6500000,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "parking": 1,
+    "area": "1184",
+    "image": "",
+    "description": "Corner & Park Facing property with Stilt Parking",
+    "features": [
+      "Corner & Park Facing property with Stilt Parking"
+    ],
+    "createdAt": "2026-10-29T02:19:38.330Z"
+  }
+]

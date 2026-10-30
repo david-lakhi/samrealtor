@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { TrendingUp, DollarSign, BarChart3, PieChart, Target, Lightbulb, ArrowUp, ArrowDown } from 'lucide-react';
+import { TrendingUp, DollarSign, BarChart3, Target, Lightbulb, ArrowUp, ArrowDown } from 'lucide-react';
 
 const InvestmentInsights: React.FC = () => {
   const [selectedProperty, setSelectedProperty] = useState('residential');
-  const [investmentType, setInvestmentType] = useState('resale');
 
   const investmentData = {
     residential: {
@@ -28,39 +27,6 @@ const InvestmentInsights: React.FC = () => {
       timeline: '7-10 years'
     }
   };
-
-  const topPicks = [
-    {
-      id: 1,
-      title: 'IT Park Vicinity - Mohali',
-      type: '3BHK Apartments',
-      price: '₹75 Lakh',
-      expectedRoi: '18%',
-      reason: 'Growing IT sector demand',
-      risk: 'Low',
-      image: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=400'
-    },
-    {
-      id: 2,
-      title: 'Sector 17 Commercial',
-      type: 'Office Spaces',
-      price: '₹1.2 Cr',
-      expectedRoi: '22%',
-      reason: 'Prime location, high rental demand',
-      risk: 'Medium',
-      image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=400'
-    },
-    {
-      id: 3,
-      title: 'Zirakpur Highway Plots',
-      type: 'Residential Plots',
-      price: '₹45 Lakh',
-      expectedRoi: '25%',
-      reason: 'Infrastructure development',
-      risk: 'High',
-      image: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=400'
-    }
-  ];
 
   const marketTrends = [
     { area: 'Chandigarh', trend: 'up', percentage: '+12%', reason: 'Government policies' },
@@ -225,68 +191,6 @@ const InvestmentInsights: React.FC = () => {
         </div>
       </div>
 
-      {/* Top Investment Picks */}
-      <div className="mb-12">
-        <h3 className="text-2xl font-bold text-white mb-8 text-center">
-          🎯 AI-Curated Top Investment Picks
-        </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {topPicks.map((pick) => (
-            <div
-              key={pick.id}
-              className="bg-gray-800/40 backdrop-blur-md border border-cyan-500/30 rounded-2xl overflow-hidden hover:border-cyan-400/50 transition-all duration-300 group"
-            >
-              <div className="relative">
-                <img
-                  src={pick.image}
-                  alt={pick.title}
-                  className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute top-3 left-3 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                  {pick.expectedRoi} ROI
-                </div>
-                <div className={`absolute top-3 right-3 px-2 py-1 rounded-full text-xs font-semibold ${
-                  pick.risk === 'Low' ? 'bg-green-500/20 text-green-400' :
-                  pick.risk === 'Medium' ? 'bg-yellow-500/20 text-yellow-400' : 'bg-red-500/20 text-red-400'
-                }`}>
-                  {pick.risk} Risk
-                </div>
-              </div>
-
-              <div className="p-6">
-                <h4 className="text-lg font-semibold text-white mb-2">{pick.title}</h4>
-                <p className="text-gray-400 text-sm mb-3">{pick.type}</p>
-                
-                <div className="flex items-center justify-between mb-3">
-                  <span className="text-2xl font-bold text-cyan-400">{pick.price}</span>
-                </div>
-
-                <div className="bg-gray-700/30 rounded-lg p-3 mb-4">
-                  <p className="text-cyan-400 text-sm font-semibold mb-1">Why this pick?</p>
-                  <p className="text-gray-300 text-xs">{pick.reason}</p>
-                </div>
-
-                <button className="w-full bg-gradient-to-r from-cyan-500 to-purple-500 text-white py-2 rounded-lg hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300">
-                  Get Detailed Analysis
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Investment Calculator */}
-      <div className="bg-gray-800/40 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-8 text-center">
-        <h3 className="text-2xl font-bold text-white mb-4">
-          🧮 AI Investment Calculator
-        </h3>
-        <p className="text-gray-300 mb-6">
-          Get personalized investment projections based on your budget and goals
-        </p>
-        <button className="bg-gradient-to-r from-cyan-500 to-purple-500 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300">
-          Launch Calculator
-        </button>
-      </div>
     </div>
   );
 };
